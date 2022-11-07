@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expanse Tracker</title>
+</head>
+<body>
+    <form id="myform">
+<label for="expanse">Expanse</label>
+<input type="text" name="expanse" id="expanse">
+<br>
+<label for="Description">Description</label>
+<input list="Description" name="Description" id="descriptionInput">
+<datalist id="Description">
+<option value="movie">movie</option>
+<option value="canteen">canteen</option>
+<option value="stationery">stationery</option>
+<option value="sports">sports</option>
+<option value="fuel">fuel</option>
+<option value="outings">outings</option>
+</datalist>
+<br>
+<label for="category">Category : </label>
+<select name="category" id="category">
+    <option value="necessary">necessary</option>
+    <option value="unnecessary">unnecessary</option>
+    <option value="justified">justified</option>
+</select>
+<br>
+<input type="submit" id="submit" value="Submit">
+<br>
+
+    </form>
+    <div class="display" id="display">
+        <ul id="displayList">
+            
+        </ul>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
